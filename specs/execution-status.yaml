@@ -2,35 +2,35 @@
 # Status: todo, in_progress, done, blocked
 
 # Epic 01: Core Gameplay Loop
-e01s01: todo
-e01s02: todo
+e01s01: done
+e01s02: done
 
 # Epic 02: UI/UX Base
-e02s01: todo
+e02s01: done
 
 # Epic 03: Sistema de Prestige
-e03s01: todo
+e03s01: done
 
 # Epic 04: Geradores Automáticos
-e04s01: todo
+e04s01: done
 
 # Epic 05: Upgrades de Clique
-e05s01: todo
+e05s01: done
 
 # Epic 06: Sistema de Trambiques
-e06s01: todo
+e06s01: done
 
 # Epic 07: Eventos Aleatórios
-e07s01: todo
+e07s01: done
 
 # Epic 08: Árvore de Habilidades
-e08s01: todo
+e08s01: done
 
 # Epic 09: Mecânicas de Risco/Recompensa
-e09s01: todo
+e09s01: done
 
 # Epic 10: Sistema de Save/Load
-e10s01: todo
+e10s01: done
 
 # Epic 11: Balanceamento e Polish
 e11s01: todo
