@@ -1,0 +1,14 @@
+id: e10
+title: "Sistema de Save/Load"
+wsjf: 2.0
+total_bcps: 4
+status: todo
+description: "Auto-save, manual save, export/import, versionamento de schema"
+
+stories:
+  - id: e10s01
+    title: "Sistema de Save/Load"
+    bcps: 4
+    status: todo
+    spec: e10s01-save-load.md
+    tasks: e10s01-tasks.yaml

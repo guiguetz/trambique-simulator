@@ -1,0 +1,14 @@
+id: e08
+title: "Árvore de Habilidades"
+wsjf: 2.8
+total_bcps: 6
+status: todo
+description: "4 ramos de habilidades: Político, Financeiro, Trambique, Resiliência"
+
+stories:
+  - id: e08s01
+    title: "Sistema de Árvore de Habilidades"
+    bcps: 6
+    status: todo
+    spec: e08s01-arvore-habilidades.md
+    tasks: e08s01-tasks.yaml

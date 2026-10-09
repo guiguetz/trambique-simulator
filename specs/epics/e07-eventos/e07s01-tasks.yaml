@@ -1,0 +1,77 @@
+story_id: e07s01
+title: "Sistema de Eventos"
+status: todo
+bcps: 5
+
+tasks:
+  - id: 1
+    description: "Definir tipo Evento e configurações iniciais"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["Core Gameplay"]
+
+  - id: 2
+    description: "Implementar sistema de timer base (2-5 minutos)"
+    verify: "npm run test:run -- src/game/eventos.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay", "Unit Tests"]
+
+  - id: 3
+    description: "Implementar chance extra por ações (+5-10%)"
+    verify: "npm run test:run -- src/game/eventos.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay", "Unit Tests"]
+
+  - id: 4
+    description: "Implementar efeitos de eventos (positivos e negativos)"
+    verify: "npm run test:run -- src/game/eventos.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay", "Unit Tests"]
+
+  - id: 5
+    description: "Integrar eventos com estado do jogo"
+    verify: "npm run test:run"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Integration"]
+
+  - id: 6
+    description: "Criar componente EventoNotificação para pop-ups"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["UI Components"]
+
+  - id: 7
+    description: "Criar componente EventosAtivos para indicadores"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["UI Components"]
+
+  - id: 8
+    description: "Escrever testes unitários para eventos"
+    verify: "npm run test:run -- src/game/eventos.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Unit Tests"]

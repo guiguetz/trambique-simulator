@@ -1,0 +1,92 @@
+release:
+  version: "0.1.0"
+  codename: "Trambique Simulator"
+  status: planning
+  semantic_release: false
+  bump_hint: minor
+  notes: "Jogo incremental com tema de corrupção política brasileira"
+
+epics:
+  - id: e01
+    title: "Core Gameplay Loop"
+    wsjf: 5.0
+    capsule_dir: epics/e01-core-gameplay
+    description: "Sistema básico de clique, votos, dinheiro e ciclo vicioso"
+    bcps: 5
+
+  - id: e02
+    title: "UI/UX Base"
+    wsjf: 4.5
+    capsule_dir: epics/e02-ui-base
+    description: "Interface principal do jogo com layout centralizado e painéis"
+    bcps: 4
+
+  - id: e03
+    title: "Sistema de Prestige"
+    wsjf: 4.0
+    capsule_dir: epics/e03-prestige-system
+    description: "Progressão de cargos com reset parcial e multiplicadores"
+    bcps: 6
+
+  - id: e04
+    title: "Geradores Automáticos"
+    wsjf: 3.8
+    capsule_dir: epics/e04-geradores
+    description: "Geradores automáticos de votos e dinheiro"
+    bcps: 5
+
+  - id: e05
+    title: "Upgrades de Clique"
+    wsjf: 3.5
+    capsule_dir: epics/e05-upgrades-clique
+    description: "Sistema de upgrades permanentes para cliques"
+    bcps: 4
+
+  - id: e06
+    title: "Sistema de Trambiques"
+    wsjf: 3.2
+    capsule_dir: epics/e06-trambiques
+    description: "Click abilities com cooldown e efeitos variados"
+    bcps: 5
+
+  - id: e07
+    title: "Eventos Aleatórios"
+    wsjf: 3.0
+    capsule_dir: epics/e07-eventos
+    description: "Sistema misto de eventos (timer + ações) positivos e negativos"
+    bcps: 5
+
+  - id: e08
+    title: "Árvore de Habilidades"
+    wsjf: 2.8
+    capsule_dir: epics/e08-arvore-habilidades
+    description: "4 ramos de habilidades: Político, Financeiro, Trambique, Resiliência"
+    bcps: 6
+
+  - id: e09
+    title: "Mecânicas de Risco/Recompensa"
+    wsjf: 2.5
+    capsule_dir: epics/e09-risco-recompensa
+    description: "Trambiques arriscados, investimentos, apostas eleitorais"
+    bcps: 5
+
+  - id: e10
+    title: "Sistema de Save/Load"
+    wsjf: 2.0
+    capsule_dir: epics/e10-save-system
+    description: "Auto-save, manual save, export/import, versionamento de schema"
+    bcps: 4
+
+  - id: e11
+    title: "Balanceamento e Polish"
+    wsjf: 1.5
+    capsule_dir: epics/e11-balanceamento
+    description: "Ajustes de números, progressão, tempo de jogo, endgame"
+    bcps: 8
+
+bugs:
+  total: 0
+  fixed: 0
+  deferred: 0
+  wontfix: 0
+  registry: specs/bugs/registry.yaml

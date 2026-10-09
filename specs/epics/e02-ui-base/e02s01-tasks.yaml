@@ -1,0 +1,68 @@
+story_id: e02s01
+title: "Layout Principal do Jogo"
+status: todo
+bcps: 4
+
+tasks:
+  - id: 1
+    description: "Criar componente GameLayout com estrutura header/main/sidebars"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["UI Components"]
+
+  - id: 2
+    description: "Criar componente Header com contadores de votos e dinheiro"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["UI Components"]
+
+  - id: 3
+    description: "Criar componente Sidebar para geradores"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["UI Components"]
+
+  - id: 4
+    description: "Criar componente Sidebar para upgrades e trambiques"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["UI Components"]
+
+  - id: 5
+    description: "Implementar responsividade com Tailwind CSS"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["UI/UX"]
+
+  - id: 6
+    description: "Aplicar tema visual com cores de política brasileira"
+    verify: "npm run build"
+    status: todo
+    risk: P3
+    allure:
+      severity: minor
+      categories: ["UI/UX"]
+
+  - id: 7
+    description: "Escrever testes de componente para layout"
+    verify: "npm run test:run -- src/components/ui/GameLayout.test.tsx"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Component Tests"]

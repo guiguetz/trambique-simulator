@@ -1,0 +1,77 @@
+story_id: e09s01
+title: "Sistema de Risco/Recompensa"
+status: todo
+bcps: 5
+
+tasks:
+  - id: 1
+    description: "Definir tipo Aposta e configurações iniciais"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["Core Gameplay"]
+
+  - id: 2
+    description: "Implementar função realizarAposta() com lógica de chance"
+    verify: "npm run test:run -- src/game/apostas.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay", "Unit Tests"]
+
+  - id: 3
+    description: "Implementar resultados positivos e negativos"
+    verify: "npm run test:run -- src/game/apostas.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay", "Unit Tests"]
+
+  - id: 4
+    description: "Integrar apostas com estado do jogo"
+    verify: "npm run test:run"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Integration"]
+
+  - id: 5
+    description: "Criar componente ApostaCard"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["UI Components"]
+
+  - id: 6
+    description: "Criar componente ApostasList"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["UI Components"]
+
+  - id: 7
+    description: "Criar animação de resultado"
+    verify: "npm run build"
+    status: todo
+    risk: P3
+    allure:
+      severity: minor
+      categories: ["UI/UX"]
+
+  - id: 8
+    description: "Escrever testes unitários para apostas"
+    verify: "npm run test:run -- src/game/apostas.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Unit Tests"]

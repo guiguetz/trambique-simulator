@@ -1,0 +1,112 @@
+# Trambique Simulator — Vision Document
+
+## Core Game Loop
+1. **Clique** para gerar votos e dinheiro (ciclo vicioso)
+2. **Compre geradores** automáticos que produzem moedas por segundo
+3. **Ative trambiques** (click abilities com cooldown) para bônus temporários
+4. **Use dinheiro** para upgrades permanentes de clique e geradores
+5. **Acumule votos** para subir de cargo político (prestige)
+6. **Resete** ao subir de cargo — perde votos/dinheiro mas mantém upgrades permanentes
+7. **Repita** com multiplicadores maiores a cada cargo
+
+## Progressão de Cargos (Prestige Layers)
+1. **Vereador** (Rio de Janeiro) — Tutorial / Primeiros passos
+2. **Deputado Estadual** — Desbloqueia novos geradores e trambiques
+3. **Governador** — Desbloqueia eventos aleatórios
+4. **Deputado Federal** — Desbloqueia árvore de habilidades
+5. **Senador** — Desbloqueia mecânicas de risco/recompensa
+6. **Presidente** — Desbloqueia "mega trambiques" com recompensas massivas
+7. **Imperador** — Modo dístico/doido, números exponenciais
+8. **???** — Endgame com números absurdos
+
+## Sistema de Prestige
+- **Reset parcial**: Ao subir de cargo, perde votos e dinheiro atuais
+- **Mantém**: Todos os upgrades permanentes desbloqueados
+- **Ganha**: Multiplicador baseado no cargo atingido (ex: x2 para Deputado, x4 para Governador, etc.)
+- **Novos desbloqueios**: Cada cargo desbloqueia novas mecânicas, geradores e trambiques
+
+## Economia: Ciclo Vicioso
+```
+VOTOS → DINHEIRO → VOTOS → DINHEIRO → ...
+   ↓         ↓
+  Cargo    Upgrades
+  (prestige) (permanentes)
+```
+
+### Moedas
+- **Votos**: Moeda primária para progressão de cargo
+- **Dinheiro**: Moeda secundária para upgrades e trambiques
+- **Conversão**: Votos geram dinheiro (propina), dinheiro gera votos (compra de votos)
+
+## Geradores Automáticos
+| Gerador | Produz | Custo | Desbloqueado em |
+|---------|--------|-------|-----------------|
+| Cabo Eleitoral | Votos/s | Dinheiro | Vereador |
+| Esquema de Propina | Dinheiro/s | Votos | Vereador |
+| Caixa 2 | Dinheiro/s | Dinheiro | Deputado Estadual |
+| Rede de Aliados | Votos/s | Votos | Governador |
+| Fundo Partidário | Dinheiro/s | Dinheiro | Deputado Federal |
+| Lobby | Votos/s + Dinheiro/s | Misto | Senador |
+| Máquina Política | Votos/s + Dinheiro/s | Misto | Presidente |
+
+## Upgrades de Clique
+- **Melhorar Discurso**: Cada clique gera mais votos
+- **Comprar Tempo de TV**: Cada clique gera mais dinheiro
+- **Marketing Político**: Multiplica ambos
+- **Fake News**: Chance de clique crítico (x10)
+
+## Trambiques (Click Abilities com Cooldown)
+| Trambique | Efeito | Cooldown | Desbloqueado em |
+|-----------|--------|----------|-----------------|
+| Desviar Verba | Gera dinheiro instantâneo | 30s | Vereador |
+| Forjar Documento | Gera votos instantâneo | 45s | Vereador |
+| Comprar Jornalista | Bônus de votos por 60s | 120s | Deputado Estadual |
+| Fraudar Licitação | Gera dinheiro massivo | 180s | Governador |
+| Delação Premiada (reverso) | Remove escândalo ativo | 60s | Deputado Federal |
+| Impeachment Falso | Bônus massivo de votos | 300s | Senador |
+| Golpe de Estado | Reset instantâneo para Presidente | 600s | Presidente |
+
+## Eventos Aleatórios (Sistema Misto)
+- **Timer base**: A cada 2-5 minutos, chance de evento
+- **Chance extra**: Ações específicas (comprar upgrade, ativar trambique) aumentam chance em +5-10%
+- **Cooldown**: Eventos não podem se repetir em menos de 60 segundos
+
+### Eventos Negativos (Risco)
+- **CPI**: Reduz geração de votos por X segundos
+- **Delação Premiada**: Reduz dinheiro ou votos
+- **Escândalo na Mídia**: Reduz ambos temporariamente
+- **Mega Escândalo**: Reduz drasticamente ambos (alto risco)
+
+### Eventos Positivos (Recompensa)
+- **Festa no Orçamento**: Bônus temporário de dinheiro
+- **Discurso Viral**: Bônus temporário de votos
+- **Anistia**: Remove penalidades ativas
+
+## Árvore de Habilidades
+- **Ramo Político**: Melhora geração de votos e desbloqueia votos passivos
+- **Ramo Financeiro**: Melhora geração de dinheiro e desbloqueia dinheiro passivo
+- **Ramo Trambique**: Reduz cooldowns e desbloqueia novos trambiques
+- **Ramo Resiliência**: Reduz impacto de eventos negativos
+
+## Mecânicas de Risco/Recompensa
+- **Trambique Arriscado**: 50% chance de bônus massivo, 50% chance de penalidade
+- **Investimento Político**: Aposte dinheiro para chance de multiplicador
+- **Aposta Eleitoral**: Aposte votos para chance de cargo instantâneo (raro)
+
+## Números e Formatação
+- **Exponencial**: Progressão usa fórmula `base * multiplicador^nivel`
+- **Formatação**: 1K, 1M, 1B, 1T, 1Qa, 1Qi, etc.
+- **Notação científica** para números muito grandes (endgame)
+
+## UI/UX
+- **Layout**: Centralizado, um botão grande de clique
+- **Painéis laterais**: Geradores, upgrades, trambiques
+- **Barra de progresso**: Progresso para próximo cargo
+- **Notificações**: Eventos aleatórios aparecem como pop-ups
+- **Tom visual**: Cores de política brasileira (verde/amarelo), humor satírico
+
+## Save System
+- **Auto-save**: A cada 30 segundos
+- **Manual save**: Botão de salvar
+- **Export/Import**: Código de save para backup
+- **Versão do save**: Schema versionado para migrações futuras

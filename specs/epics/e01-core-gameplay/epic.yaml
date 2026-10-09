@@ -1,0 +1,21 @@
+id: e01
+title: "Core Gameplay Loop"
+wsjf: 5.0
+total_bcps: 5
+status: todo
+description: "Sistema básico de clique, votos, dinheiro e ciclo vicioso"
+
+stories:
+  - id: e01s01
+    title: "Sistema de Cliques Básico"
+    bcps: 2
+    status: todo
+    spec: e01s01-clique-basico.md
+    tasks: e01s01-tasks.yaml
+
+  - id: e01s02
+    title: "Ciclo Vicioso Votos-Dinheiro"
+    bcps: 3
+    status: todo
+    spec: e01s02-ciclo-vicioso.md
+    tasks: e01s02-tasks.yaml

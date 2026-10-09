@@ -1,0 +1,53 @@
+# specs/planning-context.yaml — escrito pelo elaborate-spec
+feature_name: "Trambique Simulator"
+problem_statement: "Criar um jogo incremental (clicker) com tema de corrupção política brasileira, usando Flávio Bolsonaro como personagem central. O jogador progride de vereador no Rio até cargos cada vez mais altos, acumulando votos e dinheiro através de 'trambiques'."
+
+constraints:
+  - "TypeScript + React + Tailwind CSS"
+  - "Deve funcionar no navegador (web)"
+  - "Sistema de save/load com LocalStorage"
+  - "Números exponenciais para progressão"
+  - "Tom satírico/humorístico"
+
+out_of_scope:
+  - "Multiplayer"
+  - "Backend/servidor"
+  - "Sistema de login"
+  - "Gráficos 3D ou animações complexas"
+
+key_decisions:
+  - decision: "Duas moedas principais: votos e dinheiro em ciclo vicioso"
+    rationale: "Votos geram dinheiro (propina), dinheiro gera votos (compra de votos)"
+  - decision: "Sistema de prestige com reset parcial"
+    rationale: "Ao subir de cargo, perde votos/dinheiro mas mantém upgrades permanentes"
+  - decision: "Progressão exponencial com multiplicadores por cargo"
+    rationale: "Ex: x2 para Deputado, x4 para Governador, etc."
+  - decision: "Trambiques como click abilities com cooldown"
+    rationale: "Dá sensação de controle direto ao jogador"
+  - decision: "Eventos aleatórios com sistema misto (timer + ações)"
+    rationale: "Timer base de 2-5 min + chance extra por ações específicas"
+  - decision: "Árvore de habilidades com 4 ramos"
+    rationale: "Político, Financeiro, Trambique, Resiliência"
+  - decision: "Tom satírico e humorístico mantido em todo UI e mensagens"
+    rationale: "Crítica política através do humor"
+
+# Progressão de Cargos (Prestige Layers)
+cargos:
+  - {nome: "Vereador", descricao: "Tutorial / Primeiros passos"}
+  - {nome: "Deputado Estadual", descricao: "Desbloqueia novos geradores e trambiques"}
+  - {nome: "Governador", descricao: "Desbloqueia eventos aleatórios"}
+  - {nome: "Deputado Federal", descricao: "Desbloqueia árvore de habilidades"}
+  - {nome: "Senador", descricao: "Desbloqueia mecânicas de risco/recompensa"}
+  - {nome: "Presidente", descricao: "Desbloqueia mega trambiques"}
+  - {nome: "Imperador", descricao: "Modo dístico, números exponenciais"}
+  - {nome: "???", descricao: "Endgame com números absurdos"}
+
+# Mecânicas Principais
+mechanics:
+  - "Geradores automáticos (cabos eleitorais, propina, caixa 2, etc.)"
+  - "Upgrades de clique (discurso, tempo de TV, marketing, fake news)"
+  - "Trambiques com cooldown (desviar verba, forjar documento, etc.)"
+  - "Eventos aleatórios (CPI, delação, escândalo, discurso viral, etc.)"
+  - "Árvore de habilidades (4 ramos)"
+  - "Mecânicas de risco/recompensa"
+  - "Save/Load com LocalStorage"

@@ -1,0 +1,14 @@
+id: e04
+title: "Geradores Automáticos"
+wsjf: 3.8
+total_bcps: 5
+status: todo
+description: "Geradores automáticos de votos e dinheiro"
+
+stories:
+  - id: e04s01
+    title: "Sistema de Geradores"
+    bcps: 5
+    status: todo
+    spec: e04s01-geradores.md
+    tasks: e04s01-tasks.yaml
