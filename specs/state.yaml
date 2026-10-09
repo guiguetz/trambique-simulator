@@ -1,0 +1,11 @@
+# Trambique Simulator — Project State
+project: trambique-simulator
+workflow_mode: solo-git
+current_phase: discover
+last_updated: "2024-12-19"
+
+# Active epic
+active_epic: null
+
+# Session history
+sessions: []
