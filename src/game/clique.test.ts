@@ -27,9 +27,10 @@ describe('calcularClique', () => {
   })
 
   it('combina multiplicador de cargo e clique', () => {
+    // fórmula: (base + extras) * multiplicador * multiplicadorClique
     const resultado = calcularClique({ multiplicador: 4, votosExtras: 2, dinheiroExtra: 1, multiplicadorClique: 2 })
-    expect(resultado.votos).toBe(12) // (1 + 2) * 4 * 1 (não, vamos ver a fórmula)
-    expect(resultado.dinheiro).toBe(8)
+    expect(resultado.votos).toBe(24)   // (1 + 2) * 4 * 2
+    expect(resultado.dinheiro).toBe(16) // (1 + 1) * 4 * 2
   })
 
   it('retorna números inteiros', () => {
