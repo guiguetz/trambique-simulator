@@ -27,19 +27,19 @@ describe('ativarTrambique', () => {
   it('ativa trambique e aplica efeito de dinheiro instantâneo', () => {
     const estado = estadoBase()
     const novo = ativarTrambique(estado, 'desviar_verba')
-    expect(novo.dinheiro).toBe(50)
+    expect(novo.dinheiro).toBe(100)
   })
 
   it('ativa trambique e aplica efeito de votos instantâneo', () => {
     const estado = estadoBase()
     const novo = ativarTrambique(estado, 'forjar_documento')
-    expect(novo.votos).toBe(50)
+    expect(novo.votos).toBe(100)
   })
 
   it('inicia cooldown após ativação', () => {
     const estado = estadoBase()
     const novo = ativarTrambique(estado, 'desviar_verba')
-    expect(novo.trambiques.desviar_verba).toBe(30)
+    expect(novo.trambiques.desviar_verba).toBe(20)
   })
 
   it('não ativa se em cooldown', () => {

@@ -27,8 +27,8 @@ describe('realizarAposta', () => {
   it('deduz custo da aposta e aplica resultado', () => {
     const estado = estadoBase({ dinheiro: 1000 })
     const resultado = realizarAposta(estado, 'trambique_arriscado', 0.3) // vitória
-    // 1000 - 100 custo + 500 recompensa = 1400
-    expect(resultado.novoEstado.dinheiro).toBe(1400)
+    // 1000 - 100 custo + 300 recompensa = 1200
+    expect(resultado.novoEstado.dinheiro).toBe(1200)
     expect(resultado.vitoria).toBe(true)
   })
 
@@ -55,9 +55,9 @@ describe('realizarAposta', () => {
 
   it('aposta com votos como custo', () => {
     const estado = estadoBase({ votos: 20000 })
-    const resultado = realizarAposta(estado, 'aposta_eleitoral', 0.05) // < 0.1 = vitória
+    const resultado = realizarAposta(estado, 'aposta_eleitoral', 0.05) // < 0.15 = vitória
     expect(resultado.vitoria).toBe(true)
-    expect(resultado.novoEstado.votos).toBe(10000) // 20000 - 10000 custo (cargo reward não implementado)
+    expect(resultado.novoEstado.votos).toBe(5000) // 20000 - 15000 custo (cargo reward não implementado)
   })
 })
 

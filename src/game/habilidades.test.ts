@@ -57,7 +57,7 @@ describe('investirPonto', () => {
   it('aplica efeito de habilidade desbloqueada', () => {
     const estado = estadoBase({ votos: 100, habilidades: { politico: 4, financeiro: 0, trambique: 0, resiliencia: 0 } })
     const novo = investirPonto(estado, 'politico')
-    expect(novo.votosExtras).toBe(10) // +10% de 100 votos
+    expect(novo.votosExtras).toBe(15) // +15% de 100 votos
   })
 })
 

@@ -68,19 +68,19 @@ describe('comprarUpgrade', () => {
   it('aplica efeito de votos extras', () => {
     const estado = estadoBase()
     const novo = comprarUpgrade(estado, 'melhorar_discurso')
-    expect(novo.votosExtras).toBe(1)
+    expect(novo.votosExtras).toBe(2)
   })
 
   it('aplica efeito de dinheiro extra', () => {
     const estado = estadoBase()
     const novo = comprarUpgrade(estado, 'tempo_tv')
-    expect(novo.dinheiroExtra).toBe(1)
+    expect(novo.dinheiroExtra).toBe(2)
   })
 
   it('acumula efeitos de múltiplos níveis', () => {
-    const estado = estadoBase({ dinheiro: 5000, upgrades: { melhorar_discurso: 5 }, votosExtras: 5 })
+    const estado = estadoBase({ dinheiro: 5000, upgrades: { melhorar_discurso: 5 }, votosExtras: 10 })
     const novo = comprarUpgrade(estado, 'melhorar_discurso')
-    expect(novo.votosExtras).toBe(6)
+    expect(novo.votosExtras).toBe(12)
   })
 })
 

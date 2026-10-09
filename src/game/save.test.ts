@@ -63,7 +63,7 @@ describe('exportarSave', () => {
     const codigo = exportarSave(estado)
     const decodificado = JSON.parse(atob(codigo))
     expect(decodificado.estado.votos).toBe(42)
-    expect(decodificado.versao).toBe(1)
+    expect(decodificado.versao).toBe(2)
   })
 })
 
@@ -92,7 +92,7 @@ describe('getSaveFromStorage', () => {
     salvarManual(estado)
     const save = getSaveFromStorage()
     expect(save).not.toBeNull()
-    expect(save?.versao).toBe(1)
+    expect(save?.versao).toBe(2)
   })
 
   it('retorna null se não há save', () => {

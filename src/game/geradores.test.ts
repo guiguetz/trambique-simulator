@@ -25,7 +25,7 @@ function estadoBase(overrides: Partial<GameState> = {}): GameState {
 
 describe('getCustoGerador', () => {
   it('retorna custo base para primeiro gerador', () => {
-    expect(getCustoGerador('cabos_eleitorais', 0)).toBe(10)
+    expect(getCustoGerador('cabos_eleitorais', 0)).toBe(15)
   })
 
   it('aumenta custo com quantidade (1.15x por unidade)', () => {
