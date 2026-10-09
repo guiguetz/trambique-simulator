@@ -1,0 +1,68 @@
+story_id: e01s02
+title: "Ciclo Vicioso Votos-Dinheiro"
+status: todo
+bcps: 3
+
+tasks:
+  - id: 1
+    description: "Implementar fórmulas de conversão votos->dinheiro e dinheiro->votos"
+    verify: "npm run test:run -- src/game/conversao.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay", "Unit Tests"]
+
+  - id: 2
+    description: "Implementar sistema de tick (1 segundo) com setInterval"
+    verify: "npm run test:run"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay"]
+
+  - id: 3
+    description: "Atualizar GameState com taxas de conversão"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["Core Gameplay"]
+
+  - id: 4
+    description: "Integrar tick com estado do jogo via useRef ou useEffect"
+    verify: "npm run build"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Integration"]
+
+  - id: 5
+    description: "Criar UI para mostrar taxas de conversão"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["UI Components"]
+
+  - id: 6
+    description: "Escrever testes unitários para fórmulas de conversão"
+    verify: "npm run test:run -- src/game/conversao.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Unit Tests"]
+
+  - id: 7
+    description: "Escrever testes de integração para ciclo completo"
+    verify: "npm run test:run"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Integration Tests"]

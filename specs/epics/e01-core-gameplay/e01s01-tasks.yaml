@@ -1,0 +1,68 @@
+story_id: e01s01
+title: "Sistema de Cliques Básico"
+status: todo
+bcps: 2
+
+tasks:
+  - id: 1
+    description: "Criar tipo GameState com votos e dinheiro"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["Core Gameplay"]
+
+  - id: 2
+    description: "Implementar função clique() que incrementa votos e dinheiro"
+    verify: "npm run test:run -- src/game/clique.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay", "Unit Tests"]
+
+  - id: 3
+    description: "Criar componente ClickerButton com UI básica"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["UI Components"]
+
+  - id: 4
+    description: "Criar componente GameCounter para exibir votos/dinheiro"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["UI Components"]
+
+  - id: 5
+    description: "Integrar clique com estado do jogo (useState)"
+    verify: "npm run test:run"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Integration"]
+
+  - id: 6
+    description: "Escrever testes unitários para função clique()"
+    verify: "npm run test:run -- src/game/clique.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Unit Tests"]
+
+  - id: 7
+    description: "Escrever testes de componente para ClickerButton"
+    verify: "npm run test:run -- src/components/game/ClickerButton.test.tsx"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Component Tests"]

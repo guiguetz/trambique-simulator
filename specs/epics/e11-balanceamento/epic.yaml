@@ -1,0 +1,14 @@
+id: e11
+title: "Balanceamento e Polish"
+wsjf: 1.5
+total_bcps: 8
+status: todo
+description: "Ajustes de números, progressão, tempo de jogo, endgame"
+
+stories:
+  - id: e11s01
+    title: "Balanceamento Geral"
+    bcps: 8
+    status: todo
+    spec: e11s01-balanceamento.md
+    tasks: e11s01-tasks.yaml

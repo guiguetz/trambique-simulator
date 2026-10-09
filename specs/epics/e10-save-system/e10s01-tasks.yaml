@@ -1,0 +1,86 @@
+story_id: e10s01
+title: "Sistema de Save/Load"
+status: todo
+bcps: 4
+
+tasks:
+  - id: 1
+    description: "Definir tipo SaveData com versionamento"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["Core Gameplay"]
+
+  - id: 2
+    description: "Implementar função autoSave() com intervalo de 30 segundos"
+    verify: "npm run test:run -- src/game/save.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay", "Unit Tests"]
+
+  - id: 3
+    description: "Implementar função manualSave()"
+    verify: "npm run test:run -- src/game/save.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay", "Unit Tests"]
+
+  - id: 4
+    description: "Implementar função load() com detecção de save corrompido"
+    verify: "npm run test:run -- src/game/save.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay", "Unit Tests"]
+
+  - id: 5
+    description: "Implementar função export() que gera código base64"
+    verify: "npm run test:run -- src/game/save.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay", "Unit Tests"]
+
+  - id: 6
+    description: "Implementar função import() com validação"
+    verify: "npm run test:run -- src/game/save.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay", "Unit Tests"]
+
+  - id: 7
+    description: "Criar componente SaveButtons (salvar, exportar, importar)"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["UI Components"]
+
+  - id: 8
+    description: "Integrar save/load com estado do jogo"
+    verify: "npm run test:run"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Integration"]
+
+  - id: 9
+    description: "Escrever testes unitários para save/load"
+    verify: "npm run test:run -- src/game/save.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Unit Tests"]

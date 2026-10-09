@@ -20,15 +20,33 @@ export interface GameState {
   votos: number
   dinheiro: number
   cargoAtual: CargoType
-  multiplicador: number
+  multiplicadorCargo: number
   taxaVotosParaDinheiro: number
   taxaDinheiroParaVotos: number
-  upgradesPermanentes: Upgrade[]
-  geradores: Gerador[]
-  trambiques: Trambique[]
-  eventosAtivos: Evento[]
+  votosExtras: number
+  dinheiroExtra: number
+  multiplicadorClique: number
+  geradores: Record<string, number>
+  upgrades: Record<string, number>
+  trambiques: Record<string, number>
+  eventosAtivos: EventoAtivo[]
   habilidades: ArvoreHabilidades
-  pontosHabilidade: number
+  habilidadesDesbloqueadas: string[]
+}
+
+export interface EventoAtivo {
+  id: string
+  nome: string
+  tipo: 'reduz_votos' | 'reduz_dinheiro' | 'aumenta_votos' | 'aumenta_dinheiro'
+  multiplicador: number
+  duracaoRestante: number
+}
+
+export interface CargoConfig {
+  nome: string
+  limiteVotos: number
+  multiplicador: number
+  desbloqueios: string[]
 }
 
 export interface Upgrade {

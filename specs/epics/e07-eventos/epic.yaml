@@ -1,0 +1,14 @@
+id: e07
+title: "Eventos Aleatórios"
+wsjf: 3.0
+total_bcps: 5
+status: todo
+description: "Sistema misto de eventos (timer + ações) positivos e negativos"
+
+stories:
+  - id: e07s01
+    title: "Sistema de Eventos"
+    bcps: 5
+    status: todo
+    spec: e07s01-eventos.md
+    tasks: e07s01-tasks.yaml

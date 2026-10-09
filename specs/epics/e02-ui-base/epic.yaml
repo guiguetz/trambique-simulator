@@ -1,0 +1,14 @@
+id: e02
+title: "UI/UX Base"
+wsjf: 4.5
+total_bcps: 4
+status: todo
+description: "Interface principal do jogo com layout centralizado e painéis"
+
+stories:
+  - id: e02s01
+    title: "Layout Principal do Jogo"
+    bcps: 4
+    status: todo
+    spec: e02s01-layout-principal.md
+    tasks: e02s01-tasks.yaml

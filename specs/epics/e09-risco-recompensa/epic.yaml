@@ -1,0 +1,14 @@
+id: e09
+title: "Mecânicas de Risco/Recompensa"
+wsjf: 2.5
+total_bcps: 5
+status: todo
+description: "Trambiques arriscados, investimentos, apostas eleitorais"
+
+stories:
+  - id: e09s01
+    title: "Sistema de Risco/Recompensa"
+    bcps: 5
+    status: todo
+    spec: e09s01-risco-recompensa.md
+    tasks: e09s01-tasks.yaml

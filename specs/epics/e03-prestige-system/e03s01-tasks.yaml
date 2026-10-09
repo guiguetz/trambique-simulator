@@ -1,0 +1,77 @@
+story_id: e03s01
+title: "Sistema de Cargos Políticos"
+status: todo
+bcps: 6
+
+tasks:
+  - id: 1
+    description: "Definir tipos CargoType e CargoConfig"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["Core Gameplay"]
+
+  - id: 2
+    description: "Implementar função podeSubirDeCargo()"
+    verify: "npm run test:run -- src/game/prestige.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay", "Unit Tests"]
+
+  - id: 3
+    description: "Implementar função subirDeCargo() com reset parcial"
+    verify: "npm run test:run -- src/game/prestige.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay", "Unit Tests"]
+
+  - id: 4
+    description: "Criar configuração de cargos (limites, multiplicadores, desbloqueios)"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["Core Gameplay"]
+
+  - id: 5
+    description: "Criar componente PrestigeButton com barra de progresso"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["UI Components"]
+
+  - id: 6
+    description: "Criar modal de confirmação antes do reset"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["UI Components"]
+
+  - id: 7
+    description: "Implementar sistema de desbloqueio de mecânicas por cargo"
+    verify: "npm run test:run"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay"]
+
+  - id: 8
+    description: "Escrever testes unitários para lógica de prestige"
+    verify: "npm run test:run -- src/game/prestige.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Unit Tests"]

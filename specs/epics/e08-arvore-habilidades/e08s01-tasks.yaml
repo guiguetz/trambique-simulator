@@ -1,0 +1,86 @@
+story_id: e08s01
+title: "Sistema de Árvore de Habilidades"
+status: todo
+bcps: 6
+
+tasks:
+  - id: 1
+    description: "Definir tipos ArvoreHabilidades e Habilidade"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["Core Gameplay"]
+
+  - id: 2
+    description: "Implementar função investirPonto()"
+    verify: "npm run test:run -- src/game/habilidades.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay", "Unit Tests"]
+
+  - id: 3
+    description: "Implementar sistema de desbloqueio de habilidades"
+    verify: "npm run test:run -- src/game/habilidades.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay", "Unit Tests"]
+
+  - id: 4
+    description: "Implementar efeitos das habilidades"
+    verify: "npm run test:run -- src/game/habilidades.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay", "Unit Tests"]
+
+  - id: 5
+    description: "Integrar habilidades com estado do jogo"
+    verify: "npm run test:run"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Integration"]
+
+  - id: 6
+    description: "Criar componente ArvoreHabilidades visual"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["UI Components"]
+
+  - id: 7
+    description: "Criar componente HabilidadeCard"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["UI Components"]
+
+  - id: 8
+    description: "Implementar sistema de reset de habilidades"
+    verify: "npm run test:run"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay"]
+
+  - id: 9
+    description: "Escrever testes unitários para habilidades"
+    verify: "npm run test:run -- src/game/habilidades.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Unit Tests"]

@@ -1,0 +1,14 @@
+id: e03
+title: "Sistema de Prestige"
+wsjf: 4.0
+total_bcps: 6
+status: todo
+description: "Progressão de cargos com reset parcial e multiplicadores"
+
+stories:
+  - id: e03s01
+    title: "Sistema de Cargos Políticos"
+    bcps: 6
+    status: todo
+    spec: e03s01-cargos-politicos.md
+    tasks: e03s01-tasks.yaml

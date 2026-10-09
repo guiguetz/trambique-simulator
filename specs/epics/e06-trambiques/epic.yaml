@@ -1,0 +1,14 @@
+id: e06
+title: "Sistema de Trambiques"
+wsjf: 3.2
+total_bcps: 5
+status: todo
+description: "Click abilities com cooldown e efeitos variados"
+
+stories:
+  - id: e06s01
+    title: "Sistema de Trambiques"
+    bcps: 5
+    status: todo
+    spec: e06s01-trambiques.md
+    tasks: e06s01-tasks.yaml

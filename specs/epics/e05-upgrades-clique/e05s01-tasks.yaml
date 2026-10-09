@@ -1,0 +1,77 @@
+story_id: e05s01
+title: "Sistema de Upgrades"
+status: todo
+bcps: 4
+
+tasks:
+  - id: 1
+    description: "Definir tipo Upgrade e configurações iniciais"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["Core Gameplay"]
+
+  - id: 2
+    description: "Implementar função comprarUpgrade()"
+    verify: "npm run test:run -- src/game/upgrades.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay", "Unit Tests"]
+
+  - id: 3
+    description: "Implementar cálculo de efeitos de clique"
+    verify: "npm run test:run -- src/game/upgrades.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay", "Unit Tests"]
+
+  - id: 4
+    description: "Integrar upgrades com sistema de clique"
+    verify: "npm run test:run"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Integration"]
+
+  - id: 5
+    description: "Criar componente UpgradeCard para cada upgrade"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["UI Components"]
+
+  - id: 6
+    description: "Criar componente UpgradesList com todos os upgrades"
+    verify: "npm run build"
+    status: todo
+    risk: P2
+    allure:
+      severity: normal
+      categories: ["UI Components"]
+
+  - id: 7
+    description: "Implementar persistência de upgrades entre resets de prestige"
+    verify: "npm run test:run"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay"]
+
+  - id: 8
+    description: "Escrever testes unitários para upgrades"
+    verify: "npm run test:run -- src/game/upgrades.test.ts"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Unit Tests"]

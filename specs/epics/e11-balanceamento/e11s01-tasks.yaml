@@ -1,0 +1,95 @@
+story_id: e11s01
+title: "Balanceamento Geral"
+status: todo
+bcps: 8
+
+tasks:
+  - id: 1
+    description: "Definir fórmulas base de progressão"
+    verify: "npm run build"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Core Gameplay"]
+
+  - id: 2
+    description: "Testar tempo de jogo para cada cargo"
+    verify: "npm run test:run"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Testing"]
+
+  - id: 3
+    description: "Equilibrar custos e produções dos geradores"
+    verify: "npm run test:run"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Balanceamento"]
+
+  - id: 4
+    description: "Equilibrar efeitos dos upgrades"
+    verify: "npm run test:run"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Balanceamento"]
+
+  - id: 5
+    description: "Equilibrar cooldowns e efeitos dos trambiques"
+    verify: "npm run test:run"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Balanceamento"]
+
+  - id: 6
+    description: "Equilibrar chances e durações dos eventos"
+    verify: "npm run test:run"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Balanceamento"]
+
+  - id: 7
+    description: "Equilibrar habilidades da árvore"
+    verify: "npm run test:run"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Balanceamento"]
+
+  - id: 8
+    description: "Equilibrar apostas de risco/recompensa"
+    verify: "npm run test:run"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Balanceamento"]
+
+  - id: 9
+    description: "Testar endgame com números exponenciais"
+    verify: "npm run test:run"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Testing"]
+
+  - id: 10
+    description: "Ajustar progressão baseado em feedback"
+    verify: "npm run test:run"
+    status: todo
+    risk: P1
+    allure:
+      severity: high
+      categories: ["Balanceamento"]
